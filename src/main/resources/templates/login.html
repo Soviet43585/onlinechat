@@ -1,0 +1,39 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="stylesheet" th:href="@{css/style.css}">-->
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body class="auth">-->
+<!--    <form action="/demo/auth" class="auth-form" method="POST" enctype="application/json">-->
+<!--        <input type="text" placeholder="Логин" name="username" class="auth-form__input">-->
+<!--        <input type="text" placeholder="Пароль" name="password" class="auth-form__input">-->
+<!--        <input type="submit" placeholder="Войти" class="auth-form__input">-->
+<!--    </form>-->
+<!--    &lt;!&ndash;<script th:src="@{js/auth.js}"></script>&ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+</head>
+<body>
+<h2>Форма авторизации</h2>
+<form id="login">
+    <label for="username">Имя пользователя:</label>
+    <input type="text" id="username" name="username" required="required" />
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required="required" />
+
+    <button type="submit">Войти</button>
+</form>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>

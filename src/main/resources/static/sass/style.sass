@@ -1,0 +1,62 @@
+@import "normalize.scss"
+@import "reset.scss"
+
+$grey-color: #D9D9D9
+$green-color: #478252
+
+.auth
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+
+.auth-form
+    padding: 25px 25px 25px 25px
+    margin: 0 auto
+    max-width: 300px
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 1px solid $green-color
+    border-radius: 50px
+    &__input
+        padding: 0
+        width: 250px
+        height: 50px
+        text-align: center
+        border-radius: 50px
+        margin-bottom: 25px
+        &:last-child
+            margin-bottom: 0
+
+.api-main
+    display: flex
+    height: 100vh
+
+.nav-section
+    width: 20%
+    height: 100vh
+    background: $grey-color
+
+.content-section
+    width: 80%
+    height: 100vh
+    overflow: scroll
+    &__active-contacts
+        // height: 100%
+        width: 100%
+        padding: 20px
+        display: flex
+        flex-wrap: wrap
+
+li
+    margin-left: 10px
+ul
+    margin-bottom: 10px
+
+.contact-card
+    height: 150px
+    width: 150px
+    background: $grey-color
+    margin-left: 10px
+    margin-bottom: 10px
